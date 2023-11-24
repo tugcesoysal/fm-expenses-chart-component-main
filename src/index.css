@@ -1,13 +1,84 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 50px 30px;
+  background-color: var(--cream);
+}
+
+.root {
+  margin: 10px auto;
+  max-width: 500px; /* Adjust the max-width based on your design */
+}
+
+.balance {
+  background-color: var(--soft-red);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.my_balance_parag {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--cream);
+}
+
+.balance_data {
+  color: white;
+}
+
+.spending {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 10px;
+  max-width: 600px;
+}
+.spending_header {
+  color: var(--dark-brown);
+  text-align: start;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.line {
+  border-bottom: 3px solid var(--cream);
+  margin: 20px 30px;
+}
+
+p {
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.bottomDiv {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart {
+  cursor: pointer;
 }
